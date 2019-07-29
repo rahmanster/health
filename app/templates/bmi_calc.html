@@ -1,23 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Your BMI!</title>
-        <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <link rel="stylesheet" href="static/style.css" type="text/css" />
-    </head>
-    <body>
-        <div class='container'>
-            <div class='card' id = "cardEdit">
-                <div class = 'card-content'>
-                    <h2>Your BMI is {{ bmiNum }}.</h2>
-                    <h4> According to the information that you provided, you are {{ weight_range }}.</h4>
-                </div>
+<head>
+    <title>Your BMI!</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    
+    <link rel="stylesheet" href="static/style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/index" class="brand-logo"><i class="material-icons">rowing</i>Get Healthy!</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#food"><i class="material-icons">local_dining</i></a></li>
+                <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+                <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+                <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="sect1">
+    <div class='container'>
+        <div class='card' id="cardEdit">
+            <div class='card-content'>
+                <h2>Your BMI is {{ bmiNum }}</h2>
+                <h4> According to the information that you provided, you are {{ weight_range }}</h4>
             </div>
         </div>
-        </div>
-    </body>
+    </div>
+    </div>
+        <ul class="collapsible">
+            <li>
+                <div class="collapsible-header grey"><i class="material-icons">filter_drama</i>What is BMI</div>
+                <div class="collapsible-body grey"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header grey"><i class="material-icons">place</i>What can you do?</div>
+                <div class="collapsible-body grey"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header grey"><i class="material-icons">whatshot</i></div>
+                <div class="collapsible-body grey"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+        </ul>
+    
+    <div id="foodSect">
+        <h1>Diet</h1>
+        <p>enter</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.collapsible').collapsible();
+        });
+    </script>
+</body>
+
 </html>
