@@ -1,25 +1,41 @@
 <html>
     <head>
         <title>Get Healthy!</title>
-        <link rel="stylesheet" href="style.css" type="text/css" />
+         <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel="stylesheet" href="static/style.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-        <h1>Get Healthy!</h1>
-        <form method="POST" action="/bmi_calc">
-            <label for="name">Enter your name</label>
-            <input type='text' name='name'>
-            </br>
-            <label for="age">Enter your age</label>
-            <input type='text' name='age'>
-            </br>
-            <label for="weight">Enter your weight in pounds</label>
-            <input type='text' name='weight'>
-            </br>
-            <label for="height">Enter your height in inches</label>
-            <input type='text' name='height'>
-            </br>
-            <input type='submit'>
-            <input type="submit" value="Submit"/>
+        <div class="center">
+            <h1><i>Get Healthy!</i></h1>
+            <p class = "center">This website will calculate your BMI and give you healthy alternatives for a better lifestyle.</p>
+            <form method="POST" action="/bmi_calc">
+                <div class='container'>
+                    <div class='card'>
+                        <div class='card-content' id="cardEdit">
+                            <label for="name" id="firstPage">Enter your name</label>
+                            <input type='text' name='name' class = "center">
+                            </br>
+                            <label for="age" id="firstPage">Enter your age</label>
+                            <input type='text' name='age' class = "center">
+                            </br>
+                            <label for="weight" id="firstPage">Enter your weight in pounds</label>
+                            <input type='text' name='weight' class = "center">
+                            </br>
+                            <label for="height" id="firstPage">Enter your height in inches</label>
+                            <input type='text' name='height' class = "center">
+                            </br>
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>    
         </form>
     </body>
 </html>

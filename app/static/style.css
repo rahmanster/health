@@ -1,0 +1,15 @@
+html{
+    /*background-color: #f5933d;*/
+    background-color: #30aae3;
+    font-family: Monospace;
+}
+
+#firstPage{
+    color: black;
+    font-size: 18pt;
+}
+
+#cardEdit{
+    text-align: center;
+    background-color: #849483;
+}
