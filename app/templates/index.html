@@ -1,12 +1,24 @@
 <html>
     <head>
-        <title>Welcome!</title>
+        <title>Get Healthy!</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
     <body>
-        <h1>Hello world!</h1>
-        <p>We can build a full webpage here</p>
-        <form>
-            <input type="text" name="nickname" value="Enter your nickname"/>
+        <h1>Get Healthy!</h1>
+        <form method="POST" action="/bmi_calc">
+            <label for="name">Enter your name</label>
+            <input type='text' name='name'>
+            </br>
+            <label for="age">Enter your age</label>
+            <input type='text' name='age'>
+            </br>
+            <label for="weight">Enter your weight in pounds</label>
+            <input type='text' name='weight'>
+            </br>
+            <label for="height">Enter your height in inches</label>
+            <input type='text' name='height'>
+            </br>
+            <input type='submit'>
             <input type="submit" value="Submit"/>
         </form>
     </body>
